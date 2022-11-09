@@ -1,7 +1,7 @@
 # Inteli - Instituto de Tecnologia e Liderança 
 
 <p align="center">
-<a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
+<a href= "https://www.inteli.edu.br/"><img src="imagens/Logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
 # PomaLand
@@ -15,7 +15,7 @@
 
 <br><br>
 <p align="center">
-<img src="https://i.imgur.com/D5VzuU5.png" alt="NOME DO JOGO" border="0">
+<img src="imagens/Pomaland.png" alt="NOME DO JOGO" border="0">
   Game by <a href="https://www.linkedin.com/in/guilherme-novaes-lima-84303b232/">Guilherme Novaes Lima</a>, <a href="https://www.linkedin.com/in/jos%C3%A9-vitor-alencar-161243211/">José Vitor Alencar Silva </a>, <a href="https://www.linkedin.com/in/marcelo-saadi-pessini-003212209">Marcelo Saad Pessini</a>, <a href="https://www.linkedin.com/in/samuel-lucas-241a77210/">Samuel Lucas de Almeida</a>, <a href="https://www.linkedin.com/in/victor-genioli-386a6a249/">Victor Corazza Genioli de Oliveira</a>, <a href="https://www.linkedin.com/in/yago-ara%C3%BAjo-461816247/">Yago Araújo do Vale Moreira</a> // <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href= "https://www.inteli.edu.br/">Inteli</a>
 </p>
 <br><br>
