@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/CustomWaters.tsx-9e97abda714b05b7741659e5f33b208b.res"
+
+[deps]
+
+source_file="res://Minigames/Water World/Assets/Maps/Portal Room/CustomWaters.tsx"
+dest_files=[ "res://.import/CustomWaters.tsx-9e97abda714b05b7741659e5f33b208b.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=3
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

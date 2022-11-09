@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Minigames/Quiz/Quizpt/Scriptquizpt/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+questionInfo = "Complete a sentença: Toda vez que você estiver interessado em desenvolver um projeto, é crucial levar em consideração as sessões de  _______________. Além disso, sempre esteja 2 passos à frente da sua ideia, pois o futuro de um projeto é o mais importante."
+type = 0
+options = [ "Roadmap", "Product Line Growth Board", "Data driven", "Daily meeting" ]
+correct = "Product Line Growth Board"

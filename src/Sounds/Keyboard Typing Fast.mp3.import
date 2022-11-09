@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Keyboard Typing Fast.mp3-6ccf3641977d69a600845d88e6d3cfa1.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Keyboard Typing Fast.mp3"
+dest_files=[ "res://.import/Keyboard Typing Fast.mp3-6ccf3641977d69a600845d88e6d3cfa1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,236 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Themes/Button Theme.tres" type="Theme" id=1]
+[ext_resource path="res://Src/Options/Options.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Fonts/PressStart2P.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Src/Options/VideoSettings.gd" type="Script" id=4]
+[ext_resource path="res://Src/Options/AudioSettings.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 12
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 8
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Options" type="CanvasLayer"]
+visible = false
+script = ExtResource( 2 )
+
+[node name="Main" type="CenterContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -222.0
+margin_top = -270.0
+margin_right = -100.0
+rect_pivot_offset = Vector2( 243, 0 )
+
+[node name="Main" type="VBoxContainer" parent="Main"]
+margin_top = 85.0
+margin_right = 140.0
+margin_bottom = 185.0
+
+[node name="Video" type="Button" parent="Main/Main"]
+margin_right = 140.0
+margin_bottom = 22.0
+focus_neighbour_right = NodePath("../../../VideoSettings/VBoxContainer/WindowMode/CheckToFull")
+mouse_filter = 2
+theme = ExtResource( 1 )
+custom_colors/font_color_focus = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Video"
+flat = true
+align = 0
+
+[node name="Audio" type="Button" parent="Main/Main"]
+margin_top = 26.0
+margin_right = 140.0
+margin_bottom = 48.0
+mouse_filter = 2
+theme = ExtResource( 1 )
+custom_colors/font_color_focus = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_colors/font_color_hover = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Audio"
+flat = true
+align = 0
+
+[node name="Control" type="Button" parent="Main/Main"]
+margin_top = 52.0
+margin_right = 140.0
+margin_bottom = 74.0
+mouse_filter = 2
+theme = ExtResource( 1 )
+custom_colors/font_color_focus = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_colors/font_color_hover = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Controls"
+flat = true
+align = 0
+
+[node name="Back" type="Button" parent="Main/Main"]
+margin_top = 78.0
+margin_right = 140.0
+margin_bottom = 100.0
+mouse_filter = 2
+theme = ExtResource( 1 )
+custom_colors/font_color_focus = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_colors/font_color_hover = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Back"
+flat = true
+align = 0
+
+[node name="VideoSettings" type="CenterContainer" parent="."]
+margin_left = 160.0
+margin_right = 480.0
+margin_bottom = 270.0
+script = ExtResource( 4 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VideoSettings"]
+margin_left = 76.0
+margin_top = 114.0
+margin_right = 244.0
+margin_bottom = 156.0
+
+[node name="WindowMode" type="HBoxContainer" parent="VideoSettings/VBoxContainer"]
+margin_right = 168.0
+margin_bottom = 24.0
+
+[node name="WindowMode" type="Label" parent="VideoSettings/VBoxContainer/WindowMode"]
+margin_top = 6.0
+margin_right = 120.0
+margin_bottom = 18.0
+custom_fonts/font = SubResource( 11 )
+text = "Fullscreen"
+
+[node name="CheckToFull" type="CheckBox" parent="VideoSettings/VBoxContainer/WindowMode"]
+margin_left = 124.0
+margin_right = 148.0
+margin_bottom = 24.0
+focus_neighbour_left = NodePath("../../../../Main/Main/Video")
+
+[node name="Language" type="HBoxContainer" parent="VideoSettings/VBoxContainer"]
+margin_top = 28.0
+margin_right = 168.0
+margin_bottom = 42.0
+
+[node name="Lang" type="Label" parent="VideoSettings/VBoxContainer/Language"]
+margin_top = 1.0
+margin_right = 96.0
+margin_bottom = 13.0
+rect_pivot_offset = Vector2( -163, -14 )
+custom_fonts/font = SubResource( 11 )
+text = "Language"
+
+[node name="Btn" type="Button" parent="VideoSettings/VBoxContainer/Language"]
+margin_left = 100.0
+margin_right = 168.0
+margin_bottom = 14.0
+focus_neighbour_left = NodePath("../../../../Main/Main/Video")
+theme = ExtResource( 1 )
+custom_colors/font_color_focus = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "English"
+flat = true
+
+[node name="AudioSettings" type="CenterContainer" parent="."]
+visible = false
+margin_left = 160.0
+margin_right = 480.0
+margin_bottom = 270.0
+script = ExtResource( 5 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AudioSettings"]
+margin_left = 35.0
+margin_top = 127.0
+margin_right = 285.0
+margin_bottom = 143.0
+
+[node name="Language" type="HBoxContainer" parent="AudioSettings/VBoxContainer"]
+margin_top = 28.0
+margin_right = 250.0
+margin_bottom = 44.0
+
+[node name="Volume" type="Label" parent="AudioSettings/VBoxContainer/Language"]
+margin_top = 2.0
+margin_right = 156.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( -163, -14 )
+custom_fonts/font = SubResource( 11 )
+text = "Master Volume"
+
+[node name="Slider" type="HSlider" parent="AudioSettings/VBoxContainer/Language"]
+margin_left = 160.0
+margin_right = 250.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 90, 16 )
+focus_neighbour_top = NodePath("../../../../Main/Main/Audio")
+focus_neighbour_bottom = NodePath("../../../../Main/Main/Audio")
+min_value = -30.0
+max_value = 0.0
+ticks_on_borders = true
+
+[node name="Controls" type="CenterContainer" parent="."]
+visible = false
+margin_left = 160.0
+margin_right = 480.0
+margin_bottom = 270.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls"]
+margin_left = 52.0
+margin_top = 100.0
+margin_right = 268.0
+margin_bottom = 169.0
+custom_constants/separation = 7
+
+[node name="Move" type="Label" parent="Controls/VBoxContainer"]
+margin_right = 216.0
+margin_bottom = 12.0
+custom_fonts/font = SubResource( 11 )
+text = "Movement (↑ ↓ ← →)"
+align = 1
+
+[node name="Interact" type="Label" parent="Controls/VBoxContainer"]
+margin_top = 19.0
+margin_right = 216.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 11 )
+text = "Interact (Z)"
+align = 1
+
+[node name="Attack" type="Label" parent="Controls/VBoxContainer"]
+margin_top = 38.0
+margin_right = 216.0
+margin_bottom = 50.0
+custom_fonts/font = SubResource( 11 )
+text = "Attack (X)"
+align = 1
+
+[node name="Jump" type="Label" parent="Controls/VBoxContainer"]
+margin_top = 57.0
+margin_right = 216.0
+margin_bottom = 69.0
+custom_fonts/font = SubResource( 11 )
+text = "Jump (Spacebar)"
+align = 1
+
+[connection signal="pressed" from="Main/Main/Video" to="." method="_on_Video_pressed"]
+[connection signal="pressed" from="Main/Main/Audio" to="." method="_on_Audio_pressed"]
+[connection signal="pressed" from="Main/Main/Control" to="." method="_on_Control_pressed"]
+[connection signal="pressed" from="Main/Main/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="VideoSettings/VBoxContainer/Language/Btn" to="VideoSettings" method="_on_Btn_pressed"]
+[connection signal="value_changed" from="AudioSettings/VBoxContainer/Language/Slider" to="AudioSettings" method="_on_Slider_value_changed"]

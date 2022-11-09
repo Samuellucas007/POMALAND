@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/Maze.tmx-293a7df4bf75614d0743468c550b2efb.scn"
+
+[deps]
+
+source_file="res://Minigames/Sky World/Mapa/Labirinto/Maze.tmx"
+dest_files=[ "res://.import/Maze.tmx-293a7df4bf75614d0743468c550b2efb.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=7
+collision_layer=1
+embed_internal_images=false
+save_tiled_properties=false
+add_background=true
+post_import_script=""

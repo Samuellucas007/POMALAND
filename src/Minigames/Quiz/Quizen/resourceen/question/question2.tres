@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Minigames/Quiz/Quizen/Scripten/resource/res_questionen.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+questionInfo = "Sharing experimental project opportunities or results using Data Driven information to enable the stakeholder to make an appropriate investment decision is part of which POMA dimension?"
+type = 0
+options = [ "Stakeholder", "Data Driven", "Vision", "Business kpi" ]
+correct = "Vision"

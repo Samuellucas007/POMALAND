@@ -1,0 +1,110 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Assets/Fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Src/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Images/Custom/Pomaland-BG2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/Custom/Pomaland-title.png" type="Texture" id=4]
+[ext_resource path="res://Sounds/Inhale - VYEN - Menu.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Src/MainMenu.gd" type="Script" id=6]
+[ext_resource path="res://Assets/Themes/Button Theme.tres" type="Theme" id=7]
+[ext_resource path="res://Scenes/Options.tscn" type="PackedScene" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=5]
+Button/styles/focus = SubResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=7]
+Button/styles/focus = SubResource( 10 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Pomaland-Bg" type="Sprite" parent="."]
+position = Vector2( 240, 135 )
+texture = ExtResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="Main" type="CanvasLayer" parent="."]
+script = ExtResource( 6 )
+
+[node name="Center" type="CenterContainer" parent="Main"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -240.0
+margin_top = -216.0
+margin_right = 241.0
+rect_pivot_offset = Vector2( 243, 0 )
+
+[node name="Pomaland-title" type="Sprite" parent="Main/Center"]
+position = Vector2( 240, 21 )
+scale = Vector2( 0.375, 0.375 )
+texture = ExtResource( 4 )
+
+[node name="Vertical" type="VBoxContainer" parent="Main/Center"]
+margin_left = 154.0
+margin_top = 70.0
+margin_right = 326.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 86, 38 )
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Start" type="Button" parent="Main/Center/Vertical"]
+margin_right = 172.0
+margin_bottom = 22.0
+focus_neighbour_top = NodePath("../Quit")
+mouse_filter = 2
+theme = ExtResource( 7 )
+custom_colors/font_color_focus = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_colors/font_color_hover = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Start Game"
+flat = true
+
+[node name="Options" type="Button" parent="Main/Center/Vertical"]
+margin_top = 27.0
+margin_right = 172.0
+margin_bottom = 49.0
+mouse_filter = 2
+theme = SubResource( 5 )
+custom_colors/font_color_focus = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_colors/font_color_hover = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Options"
+flat = true
+
+[node name="Quit" type="Button" parent="Main/Center/Vertical"]
+margin_top = 54.0
+margin_right = 172.0
+margin_bottom = 76.0
+focus_neighbour_bottom = NodePath("../Start")
+mouse_filter = 2
+theme = SubResource( 7 )
+custom_colors/font_color_focus = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_colors/font_color_hover = Color( 0.839216, 0.905882, 0.286275, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Quit Game"
+flat = true
+
+[node name="Options" parent="." instance=ExtResource( 8 )]
+
+[connection signal="pressed" from="Main/Center/Vertical/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="Main/Center/Vertical/Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="Main/Center/Vertical/Quit" to="." method="_on_Quit_pressed"]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=6 format=2]
+
+[ext_resource path="res://Minigames/Quiz/Quizpt/Scriptquizpt/resource/bd_quiz.gd" type="Script" id=1]
+[ext_resource path="res://Minigames/Quiz/Quizpt/resourcequizpt/question/question1.tres" type="Resource" id=2]
+[ext_resource path="res://Minigames/Quiz/Quizpt/resourcequizpt/question/question2.tres" type="Resource" id=3]
+[ext_resource path="res://Minigames/Quiz/Quizpt/resourcequizpt/question/question4.tres" type="Resource" id=4]
+[ext_resource path="res://Minigames/Quiz/Quizpt/resourcequizpt/question/question3.tres" type="Resource" id=5]
+
+[resource]
+script = ExtResource( 1 )
+bd = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 4 ) ]

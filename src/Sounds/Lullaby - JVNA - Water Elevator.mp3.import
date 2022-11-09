@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lullaby - JVNA - Water Elevator.mp3-cbb4a23dbb527c5e5bf308d2245eb614.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Lullaby - JVNA - Water Elevator.mp3"
+dest_files=[ "res://.import/Lullaby - JVNA - Water Elevator.mp3-cbb4a23dbb527c5e5bf308d2245eb614.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

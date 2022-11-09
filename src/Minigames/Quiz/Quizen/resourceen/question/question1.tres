@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Minigames/Quiz/Quizen/Scripten/resource/res_questionen.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+questionInfo = "Complete the sentence: Whenever you are interested in developing a project, it is crucial to consider the _______________ sessions. Also, 2 steps ahead of your idea are always important, as the future of a project is the most important."
+type = 0
+options = [ "Roadmap", "Product Line Growth Board", "Data driven", "Daily meeting" ]
+correct = "Product Line Growth Board"

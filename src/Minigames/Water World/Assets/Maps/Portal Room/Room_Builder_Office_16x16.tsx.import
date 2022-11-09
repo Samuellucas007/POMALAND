@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/Room_Builder_Office_16x16.tsx-d140067210ddd3e74a434692c7c67e29.res"
+
+[deps]
+
+source_file="res://Minigames/Water World/Assets/Maps/Portal Room/Room_Builder_Office_16x16.tsx"
+dest_files=[ "res://.import/Room_Builder_Office_16x16.tsx-d140067210ddd3e74a434692c7c67e29.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=3
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

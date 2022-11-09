@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/Background.tsx-10068fef4d8cb806c25d1c36eaeb43dc.res"
+
+[deps]
+
+source_file="res://Minigames/Water World/Assets/Maps/Background.tsx"
+dest_files=[ "res://.import/Background.tsx-10068fef4d8cb806c25d1c36eaeb43dc.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=3
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

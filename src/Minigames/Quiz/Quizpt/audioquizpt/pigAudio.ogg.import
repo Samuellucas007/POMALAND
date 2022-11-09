@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pigAudio.ogg-ef33a9587da8b299d63d827ff784b30d.oggstr"
+
+[deps]
+
+source_file="res://Minigames/Quiz/Quizpt/audioquizpt/pigAudio.ogg"
+dest_files=[ "res://.import/pigAudio.ogg-ef33a9587da8b299d63d827ff784b30d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

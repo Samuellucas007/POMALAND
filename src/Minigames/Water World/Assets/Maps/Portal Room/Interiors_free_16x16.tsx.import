@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/Interiors_free_16x16.tsx-9ab846249fe66a8e0bfc2108fde2789f.res"
+
+[deps]
+
+source_file="res://Minigames/Water World/Assets/Maps/Portal Room/Interiors_free_16x16.tsx"
+dest_files=[ "res://.import/Interiors_free_16x16.tsx-9ab846249fe66a8e0bfc2108fde2789f.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=3
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

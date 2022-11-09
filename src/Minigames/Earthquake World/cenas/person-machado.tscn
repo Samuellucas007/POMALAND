@@ -1,0 +1,128 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Minigames/Earthquake World/scripts/person-machado.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Images/Custom/Dwarf Sprite Sheet 1.3v.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 48 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "atack"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 16, 17, 18, 19, 20, 22 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "dead"
+length = 0.47
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 58, 59, 60, 61, 62 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "idle"
+length = 0.47
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "walk"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 12, 13, 14, 15, 16 ]
+}
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 12.0
+
+[node name="person-machado" type="KinematicBody2D" groups=["player"]]
+script = ExtResource( 1 )
+speed = 70
+health = 50
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+anims/atack = SubResource( 5 )
+anims/dead = SubResource( 6 )
+anims/idle = SubResource( 2 )
+anims/walk = SubResource( 3 )
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 13 )
+shape = SubResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+current = true
+zoom = Vector2( 0.7, 0.7 )
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 9 )
+texture = ExtResource( 2 )
+hframes = 8
+vframes = 8
+frame = 48
+region_rect = Rect2( 0, 0, 1159.52, 2102.08 )
+
+[node name="Area2D" type="Area2D" parent="." groups=["playerAttack"]]
+
+[node name="collision" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( 0, 13 )
+scale = Vector2( 2.44338, -2.21244 )
+polygon = PoolVector2Array( 0, -4.51989, 0, -7.23182, 8.18539, -7.23182, 8.18539, 9.94375, 0, 9.94375, 0, 5.87585, 0, 3.16392, 0, 1.35597 )
+
+[connection signal="animation_finished" from="Animation" to="." method="on_animation_finished"]

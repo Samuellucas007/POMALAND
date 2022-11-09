@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Videos/Intro.webm" type="VideoStream" id=1]
+[ext_resource path="res://Src/Intro.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Fonts/PressStart2P.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 11
+font_data = ExtResource( 3 )
+
+[node name="Intro" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_right = 480.0
+margin_bottom = 270.0
+stream = ExtResource( 1 )
+volume_db = -80.0
+autoplay = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = -40.0
+margin_right = 40.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+margin_top = 14.0
+margin_right = 165.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+text = "Press z to skip"
+
+[connection signal="finished" from="VideoPlayer" to="." method="_on_VideoPlayer_finished"]

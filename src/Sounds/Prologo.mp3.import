@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Prologo.mp3-e76d8f0cd474dc7b0552ab189db8b46c.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Prologo.mp3"
+dest_files=[ "res://.import/Prologo.mp3-e76d8f0cd474dc7b0552ab189db8b46c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

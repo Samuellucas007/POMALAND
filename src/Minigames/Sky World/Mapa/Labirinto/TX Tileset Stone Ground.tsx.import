@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/TX Tileset Stone Ground.tsx-2c6e61c7360449f3d26067c2bb733f2f.res"
+
+[deps]
+
+source_file="res://Minigames/Sky World/Mapa/Labirinto/TX Tileset Stone Ground.tsx"
+dest_files=[ "res://.import/TX Tileset Stone Ground.tsx-2c6e61c7360449f3d26067c2bb733f2f.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=3
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

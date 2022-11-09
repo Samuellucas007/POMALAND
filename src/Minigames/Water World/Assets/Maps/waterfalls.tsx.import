@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/waterfalls.tsx-ce25a7aa644dcbdc8c5e0ab51bd026ab.res"
+
+[deps]
+
+source_file="res://Minigames/Water World/Assets/Maps/waterfalls.tsx"
+dest_files=[ "res://.import/waterfalls.tsx-ce25a7aa644dcbdc8c5e0ab51bd026ab.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=3
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

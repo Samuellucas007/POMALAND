@@ -1,0 +1,467 @@
+[gd_scene load_steps=46 format=2]
+
+[ext_resource path="res://Minigames/Quiz/Quizpt/resourcequizpt/bd/bd_quiz_game.tres" type="Resource" id=1]
+[ext_resource path="res://Minigames/Quiz/Quizpt/Scriptquizpt/level/level_game.gd" type="Script" id=2]
+[ext_resource path="res://Minigames/Quiz/Quizpt/Fontsquizpt/PressStart2P.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Minigames/Quiz/Quizpt/spritesquizpt/New Piskel.png" type="Texture" id=4]
+[ext_resource path="res://game over/BtnAgain.png" type="Texture" id=5]
+[ext_resource path="res://game over/GameOver.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Images/Custom/Congratport.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Fonts/PressStart2P.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://Assets/Themes/Button Theme.tres" type="Theme" id=9]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="BitmapFont" id=6]
+
+[sub_resource type="Theme" id=7]
+default_font = SubResource( 6 )
+Button/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 0 )
+Button/colors/font_color_disabled = Color( 0.901961, 0.901961, 0.901961, 0 )
+Button/colors/font_color_focus = Color( 0.941176, 0.941176, 0.941176, 0 )
+Button/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 0 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 0 )
+Button/styles/disabled = SubResource( 1 )
+Button/styles/focus = SubResource( 2 )
+Button/styles/hover = SubResource( 3 )
+Button/styles/normal = SubResource( 4 )
+Button/styles/pressed = SubResource( 5 )
+
+[sub_resource type="DynamicFont" id=26]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=13]
+Button/styles/disabled = SubResource( 8 )
+Button/styles/focus = SubResource( 9 )
+Button/styles/hover = SubResource( 10 )
+Button/styles/normal = SubResource( 11 )
+Button/styles/pressed = SubResource( 12 )
+
+[sub_resource type="DynamicFont" id=27]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=19]
+Button/styles/disabled = SubResource( 14 )
+Button/styles/focus = SubResource( 15 )
+Button/styles/hover = SubResource( 16 )
+Button/styles/normal = SubResource( 17 )
+Button/styles/pressed = SubResource( 18 )
+
+[sub_resource type="DynamicFont" id=28]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=25]
+Button/styles/disabled = SubResource( 20 )
+Button/styles/focus = SubResource( 21 )
+Button/styles/hover = SubResource( 22 )
+Button/styles/normal = SubResource( 23 )
+Button/styles/pressed = SubResource( 24 )
+
+[sub_resource type="DynamicFont" id=29]
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=30]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 241, 110 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=31]
+resource_name = "reveal "
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 241, 0 ), Vector2( 241, 110 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.109804 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=32]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=33]
+resource_name = "reveal"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=39]
+size = 11
+outline_size = 1
+outline_color = Color( 0.164706, 0.164706, 0.164706, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=38]
+size = 11
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=40]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[node name="Quiz" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+bdQuiz = ExtResource( 1 )
+colorRight = Color( 0.290196, 1, 0, 1 )
+colorWrong = Color( 1, 0, 0, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 480.0
+margin_bottom = 270.0
+color = Color( 0.00392157, 0.937255, 0.984314, 1 )
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect"]
+margin_right = 480.0
+margin_bottom = 270.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 9.0
+margin_top = 9.0
+margin_right = 464.0
+margin_bottom = 104.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Question_info" type="Container" parent="."]
+margin_left = 9.0
+margin_top = 9.0
+margin_right = 464.0
+margin_bottom = 104.0
+
+[node name="Panel" type="Panel" parent="Question_info"]
+margin_right = 455.0
+margin_bottom = 95.0
+
+[node name="Question_image" type="TextureRect" parent="Question_info/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+stretch_mode = 6
+
+[node name="Question_video" type="VideoPlayer" parent="Question_info/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Question_Audio" type="AudioStreamPlayer" parent="Question_info/Panel"]
+
+[node name="txtQuestionPT" type="Label" parent="Question_info"]
+margin_right = 455.0
+margin_bottom = 95.0
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Question_holder" type="Container" parent="."]
+margin_left = 1.0
+margin_top = 111.0
+margin_right = 480.0
+margin_bottom = 269.0
+
+[node name="ButtonOption1" type="Button" parent="Question_holder"]
+margin_left = 243.0
+margin_right = 733.0
+margin_bottom = 155.0
+rect_min_size = Vector2( 250, 0 )
+rect_scale = Vector2( 0.45, 0.45 )
+theme = SubResource( 7 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "oioioi"
+icon = ExtResource( 4 )
+icon_align = 1
+
+[node name="ButtonOption2" type="Button" parent="Question_holder"]
+margin_left = 8.0
+margin_right = 498.0
+margin_bottom = 155.0
+rect_scale = Vector2( 0.45, 0.45 )
+theme = SubResource( 13 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 27 )
+text = "oioio"
+icon = ExtResource( 4 )
+icon_align = 1
+
+[node name="ButtonOption3" type="Button" parent="Question_holder"]
+margin_left = 8.0
+margin_top = 80.0
+margin_right = 498.0
+margin_bottom = 235.0
+rect_min_size = Vector2( 250, 0 )
+rect_scale = Vector2( 0.45, 0.45 )
+theme = SubResource( 19 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 28 )
+text = "oioioi"
+icon = ExtResource( 4 )
+icon_align = 1
+
+[node name="ButtonOption4" type="Button" parent="Question_holder"]
+margin_left = 243.0
+margin_top = 80.0
+margin_right = 733.0
+margin_bottom = 235.0
+rect_min_size = Vector2( 250, 0 )
+rect_scale = Vector2( 0.45, 0.45 )
+theme = SubResource( 25 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 29 )
+text = "oioioi"
+icon = ExtResource( 4 )
+icon_align = 1
+
+[node name="CanvasLayerPT" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="tela" type="ColorRect" parent="CanvasLayerPT"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.988235 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GameOver" type="Sprite" parent="CanvasLayerPT"]
+position = Vector2( 241, 110 )
+scale = Vector2( 1.25, 1.36111 )
+texture = ExtResource( 6 )
+
+[node name="anim" type="AnimationPlayer" parent="CanvasLayerPT/GameOver"]
+autoplay = "reveal "
+anims/RESET = SubResource( 30 )
+"anims/reveal " = SubResource( 31 )
+
+[node name="ButtonRetry" type="TextureButton" parent="CanvasLayerPT"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -18.5
+margin_top = 20.0
+margin_right = 18.5
+margin_bottom = 39.0
+texture_normal = ExtResource( 5 )
+
+[node name="anim" type="AnimationPlayer" parent="CanvasLayerPT/ButtonRetry"]
+anims/RESET = SubResource( 32 )
+anims/reveal = SubResource( 33 )
+
+[node name="Label" type="Label" parent="CanvasLayerPT"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -127.0
+margin_top = 46.0
+margin_right = 130.0
+margin_bottom = 127.0
+custom_colors/font_color = Color( 0.843137, 0.482353, 0.0980392, 1 )
+custom_fonts/font = SubResource( 39 )
+text = "Você não conseguiu criar a cura, e o resto do mundo foi infectado."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Fim" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="Fim"]
+margin_left = -35.0
+margin_right = 1771.0
+margin_bottom = 1134.0
+rect_scale = Vector2( 0.291772, 0.238182 )
+texture = ExtResource( 7 )
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="Fim"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -96.0
+margin_top = 98.0
+margin_right = 96.0
+margin_bottom = 115.0
+custom_colors/font_color = Color( 0.952941, 1, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 38 )
+text = "Você acertou 4/4"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="Fim"]
+margin_left = 113.0
+margin_top = 144.0
+margin_right = 349.0
+margin_bottom = 166.0
+theme = ExtResource( 9 )
+custom_colors/font_color_focus = Color( 0.921569, 0.909804, 0.0862745, 1 )
+custom_colors/font_color = Color( 0.921569, 0.909804, 0.0862745, 1 )
+custom_colors/font_color_hover = Color( 0.933333, 0.929412, 0.698039, 1 )
+custom_colors/font_color_pressed = Color( 0.921569, 0.497396, 0.0862745, 1 )
+custom_fonts/font = SubResource( 40 )
+text = "Finalizar Jogo"
+flat = true
+
+[connection signal="pressed" from="CanvasLayerPT/ButtonRetry" to="." method="_on_ButtonRetry_pressed"]
+[connection signal="pressed" from="Fim/Button" to="." method="_on_Button_pressed"]

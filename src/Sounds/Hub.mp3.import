@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hub.mp3-a91bf518e50230bdc0fb922b20dd29cc.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Hub.mp3"
+dest_files=[ "res://.import/Hub.mp3-a91bf518e50230bdc0fb922b20dd29cc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

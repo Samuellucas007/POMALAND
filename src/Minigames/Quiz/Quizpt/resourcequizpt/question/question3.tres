@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Minigames/Quiz/Quizpt/Scriptquizpt/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+questionInfo = "Qual dos itens abaixo não é considerado um resultado necessário para o nível 1 de maturidade do Stakeholder?"
+type = 0
+options = [ "Stakeholders Alignment", "RACI Map", "Stakeholder Communication Plan", "Detailed Project Plan" ]
+correct = "Detailed Project Plan"

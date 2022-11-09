@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Minigames/Quiz/Quizpt/Scriptquizpt/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+questionInfo = "A aplicação consistente dos princípios construir-medir-aprender torna-se uma ação necessária para continuar evoluindo na maturidade das partes interessadas em que nível?"
+type = 0
+options = [ "1", "2", "3", "4" ]
+correct = "3"

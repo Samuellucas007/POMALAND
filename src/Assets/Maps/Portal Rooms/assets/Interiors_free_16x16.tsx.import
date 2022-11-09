@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/Interiors_free_16x16.tsx-540062f76942d37c1cc973ec607fa176.res"
+
+[deps]
+
+source_file="res://Assets/Maps/Portal Rooms/assets/Interiors_free_16x16.tsx"
+dest_files=[ "res://.import/Interiors_free_16x16.tsx-540062f76942d37c1cc973ec607fa176.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=3
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""
